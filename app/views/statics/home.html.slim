@@ -1,0 +1,15 @@
+div ng-app="testModule"
+  input ng-model="data.message"
+  h1
+    |{{data.message}}
+    span class="{{data.message}}"
+
+  div ng-controller="FirstCrt"
+    input ng-model="data.message"
+      h1
+        |{{data.message}}
+
+  div ng-controller="SecondCrt"
+    input ng-model="data.message"
+      h1
+        | {{ data.message }}
